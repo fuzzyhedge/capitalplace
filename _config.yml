@@ -1,0 +1,43 @@
+# Site settings
+
+title: CapitalPlace # Title of your site
+email: fuzzy.hedge@gmail.com # Your email
+
+description: > # this means to ignore newlines until "baseurl:"
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://capital.place" # the base hostname & protocol for your site
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+
+exclude: ['_sass', 'README.markdown', 'Rakefile', 'Gemfile']
+
+gems:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+feed:
+  path: atom.xml
+
+sass:
+    sass_dir: _sass
+    style: compressed
+
+# Social links.
+# Replace the word 'example' with your username if you want to include the icon in the left sidebar
+# Delete the word 'example' if you don't want to include the icon in the left sidebar
+
+twitter_username:     # Replace this with your Twitter username
+github_username:      # Replace this with your GitHub username
+linkedin_username:    # Replace this with your LinkedIn username
+google_plus_username: # Replace this with your Google+ username
+facebook_username:    # Replace this with your Facebook username
+dribbble_username:    # Replace this with your Dribbble username
+
+# Blog Configuration
+frontpage_posts: 1
+excerpt_posts: 1
+
+twitter:
+  username: 
