@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
   	<head>
-  		<title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
-  		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  	  <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
+  	  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
       <meta name="google-site-verification" content="" />
       <meta name="author" content="Fuzzy Hedge"/>
       <meta name="copyright" content="Copyright 2017"/>
@@ -14,7 +14,7 @@
       <meta name="apple-mobile-web-app-status-bar-style" content="black">
       <meta http-equiv="cleartype" content="on">
       <meta http-equiv="x-dns-prefetch-control" content="off">
-
+      <link rel="icon" href="/images/favicon.ico" type="image/ico" />
        {% seo %}
 
       <link href="" rel="publisher"/>
@@ -34,10 +34,19 @@
 
 	<body id="top">
       <header id="header">
-          <a class="image avatar" title="By Daein Ballard (Own work) [GFDL (http://www.gnu.org/copyleft/fdl.html) or CC-BY-SA-3.0 (http://creativecommons.org/licenses/by-sa/3.0/)], via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File%3ATerraformedMarsGlobeRealistic.jpg"><img width="512" alt="TerraformedMarsGlobeRealistic" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/TerraformedMarsGlobeRealistic.jpg/512px-TerraformedMarsGlobeRealistic.jpg"/></a>
+          <br><a class="image avatar" title="By Daein Ballard (Own work) CC-BY-SA-3.0 (http://creativecommons.org/licenses/by-sa/3.0/)], via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File%3ATerraformedMarsGlobeRealistic.jpg"><img width="512" alt="TerraformedMarsGlobeRealistic" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/TerraformedMarsGlobeRealistic.jpg/512px-TerraformedMarsGlobeRealistic.jpg"/></a>
           <h1><strong>Under Construction</strong></h1>
           <div class="align-center">
           </div>
+          <ul class="icons">
+            {% if site.email %}
+              <li>
+                <a href="mailto:{{ site.email }}" class="icon fa-envelope-o">
+                  <span class="label">Email</span>
+                </a>
+              </li>
+              {% endif %}
+           </ul>
       </header>
 
         {{ content }}
@@ -45,7 +54,6 @@
         <!-- Footer -->
         <footer id="footer">
             <ul class="icons">
-
               {% if site.github_username %}
               <li>
                 <a href="https://github.com/{{ site.github_username }}" class="icon fa-github">
@@ -53,55 +61,7 @@
                 </a>
               </li>
               {% endif %}
-
-              {% if site.twitter_username %}
-              <li>
-                <a href="https://twitter.com/{{ site.twitter_username }}" class="icon fa-twitter">
-                  <span class="label">Twitter</span>
-                </a>
-              </li>
-              {% endif %}
-
-              {% if site.linkedin_username %}
-              <li>
-                <a href="https://linkedin.com/in/{{ site.linkedin_username }}" class="icon fa-linkedin">
-                  <span class="label">LinkedIn</span>
-                </a>
-              </li>
-              {% endif %}
-
-              {% if site.google_plus_username %}
-              <li>
-                <a href="https://plus.google.com/{{ site.google_plus_username }}" class="icon fa-google-plus">
-                  <span class="label">Google+</span>
-                </a>
-              </li>
-              {% endif %}
-
-              {% if site.facebook_username %}
-              <li>
-                <a href="https://www.facebook.com/{{ site.facebook_username }}" class="icon fa-facebook">
-                  <span class="label">Facebook</span>
-                </a>
-              </li>
-              {% endif %}
-
-              {% if site.dribbble_username %}
-              <li>
-                <a href="#" class="icon fa-dribbble">
-                  <span class="label">Dribbble</span>
-                </a>
-              </li>
-              {% endif %}
-
-              {% if site.email %}
-              <li>
-                <a href="mailto:{{ site.email }}" class="icon fa-envelope-o">
-                  <span class="label">Email</span>
-                </a>
-              </li>
-              {% endif %}
-            </ul>
+              </ul>
             <!--<ul class="copyright">
                 <li>&copy; Fuzzy Hedge</li>
                 <li>Design: </li>

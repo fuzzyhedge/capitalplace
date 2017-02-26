@@ -4,40 +4,25 @@ layout: default
 
 
 <!-- Main -->
+
 <div id="main">
-    <section>
-        {% for post in site.posts limit: site.frontpage_posts %}
-            <header class="major">
-                <h2>{{ post.title }}</h2>
-                <p class="post-meta">{{ post.date | date: "%b %-d, %Y" }}{% if post.author %} • {{ post.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
-            </header>
+<head>
 
-            <section>
-                {{ post.content }}
-            </section>
-        {% endfor %}
-    </section>
-    <section>
-        <div class="row">
-            {% for post in site.posts offset: site.frontpage_posts limit: site.excerpt_posts %}
+<style>
+h2 {text-align:center;}
+p {text-align:center;}
+</style>
+</head>
+<body>
+<br><br>
+<h2>Capital Place</h2>
+<p>Coming Soon.<br><br>Have a question or comment?<br>
+<b>Email:</b>
+<a href="mailto:{{ site.email }}">
+<span class="label">fuzzy.hedge@gmail.com</span>
+</a>
+</p>
 
-                <article class="{% cycle '6u', '6u$' %} 12u(small)">
-                    <header>
-                        <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
-                    </header>
-                    <section>
-                        {{ post.excerpt }}
-                    </section>
-                    <footer>
-                        <ul class="actions">
-                            <li><a href="{{ site.baseurl }}{{ post.url }}" class="button"></a></li>
-                        </ul>
-                    </footer>
-                </article>
-
-            {% endfor %}
-        </div>
-    </section>
-    <hr>
-    <b>Have a question or comment?<br><br>Email:  fuzzy.hedge@gmail.com</b>
+</body>
+</section>    
 </div>
