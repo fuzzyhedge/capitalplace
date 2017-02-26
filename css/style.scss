@@ -82,7 +82,7 @@ $size-header-pad:		2em;
 	}
 
 	h2 {
-		font-size: 1.5em;
+		font-size: 1.6em;
 		line-height: 1.5em;
 	}
 
@@ -120,7 +120,7 @@ $size-header-pad:		2em;
 
 	hr {
 		border: 0;
-		border-bottom: solid 2px $color-border;
+		border-bottom: solid 20px $color-border;
 
 		// This is the *only* instance where we need to rely on margin collapse.
 		margin: $size-element-margin 0;
@@ -963,8 +963,8 @@ $size-header-pad:		2em;
 		}
 
 		.image.avatar {
-			margin: 1em 0 ($size-element-margin * 0.5) 0;
-			width: 12em;
+			margin: 1.25em 0 ($size-element-margin * 0.5) 0;
+			width: 18em;
 		}
 	}
 
